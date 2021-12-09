@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "86381772696",
+    "firebase_url": "https://blank-chat-bf43d.firebaseio.com",
+    "project_id": "blank-chat-bf43d",
+    "storage_bucket": "blank-chat-bf43d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:86381772696:android:c469acaf8233c1aaa135ed",
+        "android_client_info": {
+          "package_name": "dev.rohman.lapakpedia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "86381772696-hr5qqtgopcn5ehoc15p8f8gtug8lnnoc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dev.rohman.lapakpedia",
+            "certificate_hash": "92bca3fddd186d2222cc1d23b0dd4826bbab7539"
+          }
+        },
+        {
+          "client_id": "86381772696-f4dkhk6c5rfckuk1tdbd0iaf2g639kfb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCA6g9mF23toxVz43cMWCZJcLC9V_nvlIw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "86381772696-f4dkhk6c5rfckuk1tdbd0iaf2g639kfb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,10 @@
+<vector android:height="24dp" android:viewportHeight="54"
+    android:viewportWidth="58" android:width="24dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#f29c1f" android:fillType="nonZero" android:pathData="m23.61,38h-13.61c-0.5523,0 -1,-0.4477 -1,-1v-24l-2.24,2.24c-0.393,0.39 -1.027,0.39 -1.42,0l-4.63,-4.63c-0.39,-0.393 -0.39,-1.027 0,-1.42l8.9,-8.9c0.1868,-0.1839 0.4379,-0.2879 0.7,-0.29h21.38c0.2621,0.0021 0.5132,0.1061 0.7,0.29l8.9,8.9c0.39,0.393 0.39,1.027 0,1.42l-4.63,4.63c-0.393,0.39 -1.027,0.39 -1.42,0l-2.24,-2.24v14z"/>
+    <path android:fillColor="#e64c3c" android:fillType="nonZero" android:pathData="m56.93,51.2 l-14.07,2.64c-0.4939,0.0919 -0.98,-0.1938 -1.14,-0.67l-2.72,-8.17 -2.72,8.17c-0.16,0.4762 -0.6461,0.7619 -1.14,0.67l-14.07,-2.64c-0.2753,-0.0514 -0.5164,-0.216 -0.6647,-0.4536s-0.1901,-0.5265 -0.1153,-0.7964l3.32,-11.95 1.39,-5h28l4.71,16.95c0.0748,0.2699 0.033,0.5588 -0.1153,0.7964s-0.3894,0.4021 -0.6647,0.4536z"/>
+    <path android:fillColor="#802f34" android:fillType="nonZero" android:pathData="m37.7,42.1c-0.4302,-0.0003 -0.812,-0.2758 -0.948,-0.684l-3.4,-10.2c-0.1131,-0.3394 -0.0365,-0.7133 0.2009,-0.981 0.2374,-0.2676 0.5995,-0.3883 0.95,-0.3165 0.3505,0.0718 0.636,0.3251 0.7491,0.6645l3.4,10.2c0.1021,0.3056 0.0508,0.6417 -0.138,0.9028 -0.1888,0.2611 -0.4918,0.4153 -0.814,0.4142z"/>
+    <path android:fillColor="#d25627" android:fillType="nonZero" android:pathData="m27,0.98c0,3.3027 -2.6773,5.98 -5.98,5.98s-5.98,-2.6773 -5.98,-5.98c-0.0007,-0.3288 0.0294,-0.6569 0.09,-0.98h11.78c0.0606,0.3231 0.0907,0.6512 0.09,0.98z"/>
+    <path android:fillColor="#f9eab0" android:fillType="nonZero" android:pathData="M49.5,45.5m-2.5,0a2.5,2.5 0,1 1,5 0a2.5,2.5 0,1 1,-5 0"/>
+    <path android:fillColor="#f9eab0" android:fillType="nonZero" android:pathData="M26.5,12.5m-2.5,0a2.5,2.5 0,1 1,5 0a2.5,2.5 0,1 1,-5 0"/>
+    <path android:fillColor="#c03a2b" android:fillType="nonZero" android:pathData="m53,29v4h-28v-4c0.0033,-1.1032 0.8968,-1.9967 2,-2h24c1.1032,0.0033 1.9967,0.8968 2,2z"/>
+</vector>

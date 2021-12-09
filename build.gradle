@@ -1,0 +1,40 @@
+buildscript {
+    ext.nav_version = "2.3.2"
+    ext.koin_version= "2.2.1"
+    ext.room_version = "2.2.5"
+    ext.gradle_version = "4.1.1"
+    ext.glide_version = "4.11.0"
+    ext.kotlin_version = "1.4.20"
+    ext.retrofit_version = "2.9.0"
+    ext.fragment_version = "1.2.5"
+    ext.lifecycle_version = "2.2.0"
+    ext.crashlytics_version = "2.4.1"
+    ext.google_service_version = "4.3.4"
+
+    repositories {
+        google()
+        jcenter()
+    }
+
+    dependencies {
+        classpath "com.android.tools.build:gradle:$gradle_version"
+        classpath "com.google.gms:google-services:$google_service_version"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version"
+        classpath "com.google.firebase:firebase-crashlytics-gradle:$crashlytics_version"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+
+        maven { url "http://dl.bintray.com/pt-midtrans/maven" }
+        maven { url "https://jitpack.io" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

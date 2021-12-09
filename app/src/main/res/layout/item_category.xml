@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_category"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/space_small"
+    android:background="@drawable/bg_selected_category"
+    android:drawablePadding="@dimen/space_small"
+    android:padding="@dimen/space_small"
+    android:textColor="@color/colorTextPrimary"
+    android:textSize="@dimen/text_default"
+    android:textStyle="bold"
+    tools:drawableEnd="@drawable/ic_flame"
+    tools:text="@tools:sample/full_names" />

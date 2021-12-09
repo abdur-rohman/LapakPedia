@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/srl_product"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundPrimary"
+    tools:context=".views.fragments.ProductFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/vp_images"
+                android:layout_width="0dp"
+                android:layout_height="412dp"
+                android:layout_marginTop="@dimen/space_default"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_price" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_default"
+                android:background="@drawable/bg_category"
+                android:elevation="@dimen/elevation_small"
+                android:padding="@dimen/space_small"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/text_default"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Rp. 100.000,00" />
+
+            <me.relex.circleindicator.CircleIndicator3
+                android:id="@+id/ci_dots"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                app:layout_constraintBottom_toBottomOf="@id/vp_images"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_seller"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                tools:ignore="ContentDescription"
+                tools:src="@tools:sample/avatars"
+                android:layout_margin="@dimen/space_default"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/vp_images" />
+
+            <ImageView
+                android:id="@+id/iv_favorite"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="@dimen/space_default"
+                android:src="@drawable/ic_un_favorite"
+                app:layout_constraintBottom_toTopOf="@id/vp_images"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tv_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_default"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/text_default"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/iv_seller"
+                app:layout_constraintTop_toBottomOf="@id/vp_images"
+                tools:text="@tools:sample/full_names" />
+
+            <TextView
+                android:id="@+id/tv_seller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space_default"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="@dimen/text_small"
+                app:layout_constraintStart_toEndOf="@id/iv_seller"
+                app:layout_constraintTop_toBottomOf="@id/tv_product"
+                tools:text="@tools:sample/full_names" />
+
+            <TextView
+                android:id="@+id/tv_stock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_default"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/text_large"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/tv_description"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/vp_images"
+                tools:text="Stok: 100" />
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_default"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="@dimen/text_default"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.531"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_seller"
+                tools:text="Ini adalah deskripsi dari product, bisa ditulis dengan beberapa karakter panjang termasuk dengan memberikan enter disetiap paragraf." />
+
+            <TextView
+                android:id="@+id/tv_gross_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_default"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/text_large"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_description"
+                tools:text="Rp. 100.000,00" />
+
+            <ImageButton
+                android:id="@+id/ib_decrease"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="@dimen/space_default"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_decrease"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_gross_amount"
+                tools:ignore="ContentDescription" />
+
+            <EditText
+                android:id="@+id/et_quantity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_default"
+                android:background="@drawable/bg_category"
+                android:elevation="@dimen/elevation_small"
+                android:gravity="center"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:padding="@dimen/padding_text"
+                android:text="1"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/text_default"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/ib_increase"
+                app:layout_constraintStart_toEndOf="@id/ib_decrease"
+                app:layout_constraintTop_toBottomOf="@id/tv_gross_amount"
+                tools:ignore="HardcodedText,LabelFor" />
+
+            <ImageButton
+                android:id="@+id/ib_increase"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="@dimen/space_default"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_increase"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btn_add_to_cart"
+                app:layout_constraintTop_toBottomOf="@id/tv_gross_amount"
+                tools:ignore="ContentDescription" />
+
+            <Button
+                android:id="@+id/btn_add_to_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_default"
+                android:backgroundTint="@color/black"
+                android:text="Tambah ke keranjang"
+                android:textSize="@dimen/text_small"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_gross_amount"
+                tools:ignore="HardcodedText" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

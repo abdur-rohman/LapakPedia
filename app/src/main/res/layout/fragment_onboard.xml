@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.fragments.OnboardFragment">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/space_default"
+        android:adjustViewBounds="true"
+        android:src="@drawable/e_commerce"
+        app:layout_constraintBottom_toTopOf="@id/tv_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_primary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_default"
+        android:layout_marginEnd="@dimen/space_default"
+        android:layout_marginBottom="@dimen/space_small"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="Selamat datang di Lapak Pedia"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="@dimen/text_large"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/tv_secondary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_secondary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/space_default"
+        android:layout_marginVertical="@dimen/space_large"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="Temukan semua barang yang kamu inginkan disini hanya dalam satu kali pencarian"
+        android:textColor="@color/colorTextSecondary"
+        android:textSize="@dimen/text_default"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/space_default"
+        android:layout_marginVertical="@dimen/space_large"
+        android:backgroundTint="@color/colorButtonSecondary"
+        android:padding="@dimen/padding_button"
+        android:text="DAFTAR"
+        android:textSize="@dimen/text_default"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_login"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/space_default"
+        android:layout_marginVertical="@dimen/space_large"
+        android:backgroundTint="@color/colorButtonPrimary"
+        android:padding="@dimen/padding_button"
+        android:text="MASUK"
+        android:textSize="@dimen/text_default"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/btn_register" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
